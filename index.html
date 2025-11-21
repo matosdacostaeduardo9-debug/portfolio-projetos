@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos - Eduardo Matos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .developer-info {
+            margin-top: 1rem;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            display: inline-block;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .project-card p {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        .project-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .project-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .project-link i {
+            margin-left: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 120px;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portfólio de Projetos</h1>
+            <p class="subtitle">Desenvolvido por Eduardo Matos - RU: 3838064</p>
+            <div class="developer-info">
+                <i class="fas fa-laptop-code"></i> Projetos Interativos Educacionais
+            </div>
+        </header>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Fundamentos Digitais</h3>
+                <p>Tutorial educativo sobre segurança digital, privacidade online e proteção de dados pessoais na internet.</p>
+                <a href="https://matosdacostaeduardo9-debug.github.io/1-fundamentos-digitais/" class="project-link" target="_blank">
+                    Acessar Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>Como Funciona a Internet</h3>
+                <p>Guia interativo explicando o funcionamento da internet, modems, redes WiFi e infraestrutura digital.</p>
+                <a href="https://matosdacostaeduardo9-debug.github.io/2-Como-Funciona-a-Internet/" class="project-link" target="_blank">
+                    Acessar Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Simulador de Smartphone</h3>
+                <p>Simulação interativa de um smartphone com apps funcionais para demonstrar o uso consciente de dispositivos.</p>
+                <a href="https://matosdacostaeduardo9-debug.github.io/3-simulador-smartphone/" class="project-link" target="_blank">
+                    Acessar Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Saúde Digital</h3>
+                <p>Tutorial sobre uso consciente de telas, equilíbrio tecnológico e bem-estar digital no dia a dia.</p>
+                <a href="https://matosdacostaeduardo9-debug.github.io/4-saude-digital/" class="project-link" target="_blank">
+                    Acessar Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Dashboard com Resultados</h3>
+                <p>Painel interativo com métricas, estatísticas e visualização de dados dos projetos desenvolvidos.</p>
+                <a href="https://matosdacostaeduardo9-debug.github.io/5-Dashboard-com-resultados/" class="project-link" target="_blank">
+                    Acessar Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>🚀 <strong>5 Projetos Interativos Desenvolvidos</strong></p>
+            <p>Tecnologias: HTML5, CSS3, JavaScript, Git & GitHub Pages</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Projetos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Responsivos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Online</span>
+                    <span class="stat-label">GitHub Pages</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Efeito de carregamento suave
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+
+        // Efeito de clique nos cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (!e.target.classList.contains('project-link')) {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
