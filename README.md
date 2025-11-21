@@ -16,6 +16,8 @@ Coleção de trabalhos desenvolvidos para demonstrar a aplicação de conceitos 
 - ✅ Experiência do usuário otimizada
 - ✅ Conteúdo educativo acessível
 
+  link: https://matosdacostaeduardo9-debug.github.io/portfolio-projetos/
+
 ## 👨‍🎓 Autor
 **Eduardo Matos**  
 RU: 3838064  
